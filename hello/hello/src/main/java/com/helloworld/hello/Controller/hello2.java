@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping ("/Hello")
+@RequestMapping ("/Hello2")
 
-public class HelloController {
+public class hello2 {
 	
 
 	@GetMapping
 	public String Hello() {
-		return "persistência, trabalho em equipe e atenção ao detalhe";
+		return "Ajudar os colegas que estão tendo dificuldades, ter foco nas aulas e refazer os exercicios";
 	}
 	
 
 }
-
