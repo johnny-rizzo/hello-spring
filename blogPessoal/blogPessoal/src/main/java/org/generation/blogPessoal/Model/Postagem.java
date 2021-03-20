@@ -30,6 +30,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 	private String texto;
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date Data=new java.sql.Date(System.currentTimeMillis());
+		
 	
 		@ManyToOne
 		@JsonIgnoreProperties("Postagem")

@@ -9,9 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.sun.istack.NotNull;
 
 
 	@Entity
@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 	
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
-	private List <Postagem> Postagem;
+	private List <Postagem> postagem;
 	
 	
 	public Long getId() {
@@ -42,10 +42,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 		this.descricao = descricao;
 	}
 	public List<Postagem> getPostagem() {
-		return Postagem;
+		return postagem;
 	}
 	public void setPostagem(List<Postagem> postagem) {
-		Postagem = postagem;
+		this.postagem = postagem;
 	}
 	
 
